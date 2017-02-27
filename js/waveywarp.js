@@ -27,8 +27,8 @@ void main() {
 
   float v = v_texcoord.y;
 
-  float off1 = sin((v + 0.5) * mix(1., 6., upDown(t1))) * .2;
-  float off2 = sin((v + 0.5) * mix(1., 3., upDown(t2))) * .2;
+  float off1 = sin((v + 0.5) * mix(1., 1., upDown(t1))) * .2;
+  float off2 = sin((v + 0.5) * mix(1., 2., upDown(t2))) * .2;
   float off = off1 + off2;
 
   // like the canvas2d example if off = 0 then the image will just
@@ -127,7 +127,7 @@ void main() {
     var programIndex = 0;
     var programInfos = [
   programInfo1,
-  programInfo2,
+  // programInfo2,
 ];
 
     function nextProgram() {

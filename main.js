@@ -67,8 +67,8 @@ function init() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.sortObjects = false;
 
-    container = document.createElement('div');
-    document.body.appendChild(container);
+    // container = document.createElement('div');
+    // document.body.appendChild(container);
 
     //            camera = new THREE.PerspectiveCamera(25, SCREEN_WIDTH / SCREEN_HEIGHT, 50, 1e7);
     //            camera.position.z = radius * 5;
@@ -111,9 +111,6 @@ function init() {
     scene.add(meshPlane);
 
 
-
-
-
     //            materialPlane.minFilter = materialPlane.magFilter = THREE.LinearFilter;
     perturbVerts();
 
@@ -125,10 +122,6 @@ function init() {
 
     //////////////////////////////////// lights //////////////////////////////////////////
     scene.add(new THREE.AmbientLight(0xffffff));
-
-
-
-
 
 
     container.appendChild(renderer.domElement);

@@ -3,10 +3,15 @@ $( document ).ready(function() {
       $("#x-out").click(function() {
       $("#promo-bg").css('display', 'none');        
       $("#promo-modal").css('display', 'none');
-      $("#container").css("background","#21605F");      
-      $("#single-links").css('display', 'flex');
-      $("#single-links").css('justify-content','space-around'); 
-      $("#single-links").show();
+      // $("#container").css("display","none");
+      // $("#single-links").css('display', 'flex');
+      // $("#single-links").css('justify-content','space-around'); 
+      // $("#single-links").show();
+        $("#container").hover(function(){
+          console.log("HOVERING OVER container");
+          $("#container").css("display","none");
+          $("#animation").css("display","block");  
+        });
       });
     
       $("#forever-anchor").mouseover(function() {
